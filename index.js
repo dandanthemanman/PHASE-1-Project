@@ -13,14 +13,14 @@ function populate(breweries) {
 }
 
 function addNewBrewery(brewery) { 
-    let beerName= document.createElement('h2')
+    let breweryName= document.createElement('h2')
     let breweryType = document.createElement('h4')
     let address = document.createElement('p')
     let website = document.createElement('a')
     let likeButton = document.createElement('button')
     
     //Add beer name, brewery type, and address
-    beerName.innerText = brewery.name 
+    breweryName.innerText = brewery.name 
     breweryType.innerText = `Type: ${brewery.brewery_type}`
     address.innerText = `Address: ${brewery.street} ${brewery.city}, ${brewery.state} ${brewery.postal_code}`
 
@@ -35,7 +35,9 @@ function addNewBrewery(brewery) {
     //Add content to heart button
     //This doesn't persist. Do we want to push to our data?
     likeButton.innerHTML = "❤"
+    likeButton.className = "likeBtn"
     likeButton.style.color = "white"
+    likeButton.style.alignContent
     likeButton.addEventListener("click", () => { 
         if (likeButton.style.color === "white") {
             likeButton.style.color = "red"
@@ -44,11 +46,12 @@ function addNewBrewery(brewery) {
         }
     })
     let beerContainer = document.getElementById("beer-container")
-    beerContainer.append(beerName, likeButton, breweryType, address, website)
+    breweryName.append(likeButton)
+    beerContainer.append(breweryName, breweryType, address, website)
 }
 
 function submitForm () {
-    const form = document.getElementById("submit-beer")
+    const form = document.getElementById("form")
     form.addEventListener("submit", (e) => { 
         e.preventDefault()
         let newBrewery = { 
@@ -71,8 +74,8 @@ function submitForm () {
         .then(newBreweryData => { 
             addNewBrewery(newBreweryData)
         })
-        document.getElementById("submit-beer").reset()
     })
+    collapseForm(form)
 }
 
 function filterBreweries (breweries) { 
@@ -84,5 +87,16 @@ function filterBreweries (breweries) {
                 addNewBrewery(beer)
             }
         })
+    })
+}
+
+function collapseForm (form) { 
+    let collapseElement = document.querySelector(".collapsible")
+    collapseElement.addEventListener("click", () => {
+        if (form.style.display === "block") { 
+            form.style.display = "none";
+        } else { 
+            form.style.display = "block"
+        }
     })
 }
