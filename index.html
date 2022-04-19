@@ -4,12 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Beer Necessities</title>
     <script src="./index.js" defer></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+<header> 
+     <h1 id="page_title">The Beer Necessities</h1>
+</header>
 <body>
-    <h1>The Beer Necessities</h1>
     <div id="submit-beer">
+        <h3 id="new_beer">Add a new beer</h4>
         <form>
             <label for="name">Brewery Name: </label><br>
             <input type="text" id="name" name="name" placeholder="Name"><br>
@@ -37,7 +41,15 @@
 
         </form>
     </div>
+    <div>
+        <p>Filter brewery by type: </p>
+        <select id="beer-type-dropdown" name="select-beer">
+            <option value="" disabled selected hidden>Choose a type</option>
+            <option value="planning">planning</option>
+            <option value="micro">micro</option>
+            <option value="brewpub">brewpub</option>
+          </select>
+    </div>
     <div id="beer-container"></div>
-    
 </body>
 </html>

@@ -1,0 +1,15 @@
+#page_title { 
+  color:darkolivegreen; 
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: center;
+}
+
+#new_beer { 
+  color:darkslategray; 
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-decoration: underline;
+}
+
+#beer-container { 
+  text-align: right;
+}

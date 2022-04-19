@@ -6,44 +6,49 @@ fetch ('http://localhost:3000/breweries')
 })
 
 function populate(breweries) {
-    const beerContainer = document.getElementById("beer-container")
     breweries.forEach(brewery => {
-        let beerName= document.createElement('h2')
-        let breweryType = document.createElement('h4')
-        let address = document.createElement('p')
-        let website = document.createElement('a')
-        let likeButton = document.createElement('button')
-        
-        //Add beer name, brewery type, and address
-        beerName.innerText = brewery.name 
-        breweryType.innerText = `Type: ${brewery.brewery_type}`
-        address.innerText = `Address: ${brewery.street} ${brewery.city}, ${brewery.state} ${brewery.postal_code}`
+        addNewBrewery(brewery)
+    })
+    filterBreweries(breweries)
+}
 
-        //Remove "null" from the address
-        if (address.innerText.includes("null")) {
-            address.innerText = address.innerText.replace("null", "")} //Can rewrite as a ternary
+function addNewBrewery(brewery) { 
+    let beerName= document.createElement('h2')
+    let breweryType = document.createElement('h4')
+    let address = document.createElement('p')
+    let website = document.createElement('a')
+    let likeButton = document.createElement('button')
+    
+    //Add beer name, brewery type, and address
+    beerName.innerText = brewery.name 
+    breweryType.innerText = `Type: ${brewery.brewery_type}`
+    address.innerText = `Address: ${brewery.street} ${brewery.city}, ${brewery.state} ${brewery.postal_code}`
 
-        //Add the URL
-        website.href= `${brewery.website_url}`
-        website.innerText = brewery.website_url
+    //Remove "null" from the address
+    if (address.innerText.includes("null")) {
+        address.innerText = address.innerText.replace("null", "")} //Can rewrite as a ternary
 
-        //Add content to heart button
-        likeButton.innerHTML = "❤"
-        likeButton.style.color = "white"
-        likeButton.addEventListener("click", () => { 
-            if (likeButton.style.color === "white") {
-                likeButton.style.color = "red"
-            } else if (likeButton.style.color === "red") { 
-                likeButton.style.color = "white" 
-            }
-        })
+    //Add the URL
+    website.href= `${brewery.website_url}`
+    website.innerText = brewery.website_url
 
-        beerContainer.append(beerName, likeButton, breweryType, address, website)
-    }) 
+    //Add content to heart button
+    //This doesn't persist. Do we want to push to our data?
+    likeButton.innerHTML = "❤"
+    likeButton.style.color = "white"
+    likeButton.addEventListener("click", () => { 
+        if (likeButton.style.color === "white") {
+            likeButton.style.color = "red"
+        } else if (likeButton.style.color === "red") { 
+            likeButton.style.color = "white" 
+        }
+    })
+    let beerContainer = document.getElementById("beer-container")
+    beerContainer.append(beerName, likeButton, breweryType, address, website)
 }
 
 function submitForm () {
-    let form = document.getElementById("submit-beer")
+    const form = document.getElementById("submit-beer")
     form.addEventListener("submit", (e) => { 
         e.preventDefault()
         let newBrewery = { 
@@ -63,9 +68,21 @@ function submitForm () {
             body: JSON.stringify(newBrewery)
         })
         .then (response => response.json())
-        .then(newData => { 
-            populate(newData)
+        .then(newBreweryData => { 
+            addNewBrewery(newBreweryData)
         })
-        // form.reset()
+        document.getElementById("submit-beer").reset()
+    })
+}
+
+function filterBreweries (breweries) { 
+    const select = document.getElementById("beer-type-dropdown")
+    select.addEventListener("change", (e) => { 
+        document.getElementById("beer-container").innerHTML = ""
+        breweries.forEach(beer => { 
+            if (beer.brewery_type === e.target.value) { 
+                addNewBrewery(beer)
+            }
+        })
     })
 }
