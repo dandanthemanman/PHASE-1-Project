@@ -62,6 +62,7 @@ function submitForm () {
             "postal_code": e.target.zipCode.value,
             "website_url": e.target.websiteUrl.value
         }
+        form.reset()
         fetch ('http://localhost:3000/breweries', { 
             method: 'POST', 
             headers: { 

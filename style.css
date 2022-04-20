@@ -1,12 +1,18 @@
 header { 
   font-family: 'Permanent Marker';
-  font-size: 22px;
+  font-size: 25px;
   text-align: center;
   color: #db8e00; 
   background-image: url("http://clipart-library.com/img/1179659.gif"); 
   background-repeat: repeat-x;
-  background-size: 40px;
+  background-size: 45px;
   background-position-y: bottom;
+}
+
+#description { 
+  font-family: 'Permanent Marker';
+  color: #825501; 
+  text-align: center;
 }
 
 #filter { 
@@ -18,21 +24,39 @@ header {
 #beer-type-dropdown { 
   cursor:pointer;
   font-family: 'Permanent Marker';
-  font-size: 12px;
+  font-size: 13px;
+  color: #db8e00;
 }
 
 #new_brewery, h2 { 
-  color:#99cff0; 
-  font-family: 'Permanent Marker';
+  color:#db8e00; 
+  font-family: 'Neucha';
   font-size: 22px;
 }
 
-label { 
-  font-family: 'Permanent Marker';
+label, .input{ 
+  font-family: 'Neucha';
+}
+
+h4 { 
+  font-family: 'Neucha';
+  font-weight:bolder;
+}
+
+p, a { 
+  font-family: 'Neucha';
+  font-weight:100;
+  font-size:14px;
+}
+
+#submitBtn { 
+  font-family: 'Neucha';
+  font-size: 18px;
+  text-align: center;
 }
 
 .collapsible { 
-  color: #444; 
+  background-color: #ffecd2; 
   cursor: pointer; 
   padding: 18px; 
   width: 100%; 
@@ -42,14 +66,14 @@ label {
 }
 
 .collapsible:hover {
-  background-color: #ccc;
+  background-color: #ffc16b;
 }
 
 #form { 
   padding: 0 18px;
   display: none;
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: #ffecd2;
 }
 
 .likeBtn {
@@ -58,8 +82,8 @@ label {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-  font-size: 20px;
-  margin-left: 10px;
+  font-size: 18px;
+  margin-left: 5px;
 }
 
 .column {
@@ -74,5 +98,5 @@ label {
 }
 
 .row { 
-  background-image: linear-gradient(to bottom right, #ffaa00, #ff0059);
+  background-image: linear-gradient(to bottom right, white, #ffecd2);
 }

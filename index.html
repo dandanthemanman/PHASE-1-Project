@@ -7,19 +7,21 @@
     <title>The Beer Necessities</title>
     <script src="./index.js" defer></script>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Neucha&family=Permanent+Marker&display=swap">
 </head>
 <header> 
      <h1 id="page_title">The Beer Necessities!</h1>
 </header>
 <body>
-    <div id="filter">
-        <p>Filter brewery by type: 
+    <h3 id="description">A cohesive list of the best breweries in California!</h2>
+    <div>
+        <p id="filter">Filter brewery by type: 
             <select id="beer-type-dropdown">
                 <option value="" disabled selected hidden>Choose a type</option>
                 <option value="planning">planning</option>
                 <option value="micro">micro</option>
                 <option value="brewpub">brewpub</option>
+                <option value="contract">contract</option>
             </select>
         </p>
     </div>
@@ -39,7 +41,7 @@
                     <input type="text" class="input" name="state" placeholder="State"><br>
                 <label>Zip Code: </label><br>
                     <input type="text" class="input" name="zipCode" placeholder="Zip Code"><br>
-                <label>Website URL: </label><br>
+                <label>Website URL : </label><br>
                     <input type="text" class="input" name="websiteUrl" placeholder="Website URL"><br><br>
                 <button id="submitBtn">Submit</button>
             </form>
