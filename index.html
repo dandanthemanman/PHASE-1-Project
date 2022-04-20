@@ -7,41 +7,44 @@
     <title>The Beer Necessities</title>
     <script src="./index.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Permanent+Marker">
 </head>
 <header> 
      <h1 id="page_title">The Beer Necessities!</h1>
-     <img src="http://clipart-library.com/img/1179659.gif">
 </header>
 <body>
-    <div id="submit-beer">
-        <button id="new_beer" type="button" class="collapsible">Click to add a new brewery!</button>
-        <form id="form">
-            <label>Brewery Name:</label><br>
-                <input type="text" class="input" name="name" placeholder="Name"><br>
-            <label>Brewery Type: </label><br>
-                <input type="text" class="input" name="type" placeholder="Type"><br>
-            <label>Street: </label><br>
-                <input type="text" class="input" name="street" placeholder="Street"><br>
-            <label>City: </label><br>
-                <input type="text" class="input" name="city" placeholder="City"><br>
-            <label>State: </label><br>
-                <input type="text" class="input" name="state" placeholder="State"><br>
-            <label>Zip Code: </label><br>
-                <input type="text" class="input" name="zipCode" placeholder="Zip Code"><br>
-            <label>Website URL: </label><br>
-                <input type="text" class="input" name="websiteUrl" placeholder="Website URL"><br><br>
-            <button id="submitBtn">Submit</button>
-        </form>
+    <div id="filter">
+        <p>Filter brewery by type: 
+            <select id="beer-type-dropdown">
+                <option value="" disabled selected hidden>Choose a type</option>
+                <option value="planning">planning</option>
+                <option value="micro">micro</option>
+                <option value="brewpub">brewpub</option>
+            </select>
+        </p>
     </div>
-    <div>
-        <p>Filter brewery by type: </p>
-        <select id="beer-type-dropdown" name="select-beer">
-            <option value="" disabled selected hidden>Choose a type</option>
-            <option value="planning">planning</option>
-            <option value="micro">micro</option>
-            <option value="brewpub">brewpub</option>
-          </select>
+    <div id="submit-beer" class="row">
+        <div class="column">
+            <button id="new_brewery" type="button" class="collapsible">Click to add a new brewery!</button>
+            <form id="form">
+                <label>Brewery Name:</label><br>
+                    <input type="text" class="input" name="name" placeholder="Name"><br>
+                <label>Brewery Type: </label><br>
+                    <input type="text" class="input" name="type" placeholder="Type"><br>
+                <label>Street: </label><br>
+                    <input type="text" class="input" name="street" placeholder="Street"><br>
+                <label>City: </label><br>
+                    <input type="text" class="input" name="city" placeholder="City"><br>
+                <label>State: </label><br>
+                    <input type="text" class="input" name="state" placeholder="State"><br>
+                <label>Zip Code: </label><br>
+                    <input type="text" class="input" name="zipCode" placeholder="Zip Code"><br>
+                <label>Website URL: </label><br>
+                    <input type="text" class="input" name="websiteUrl" placeholder="Website URL"><br><br>
+                <button id="submitBtn">Submit</button>
+            </form>
+        </div>
+         <div id="brewery-container" class="column"></div>
     </div>
-    <div id="beer-container"></div>
 </body>
 </html>

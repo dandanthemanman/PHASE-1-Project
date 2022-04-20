@@ -37,7 +37,6 @@ function addNewBrewery(brewery) {
     likeButton.innerHTML = "❤"
     likeButton.className = "likeBtn"
     likeButton.style.color = "white"
-    likeButton.style.alignContent
     likeButton.addEventListener("click", () => { 
         if (likeButton.style.color === "white") {
             likeButton.style.color = "red"
@@ -45,9 +44,9 @@ function addNewBrewery(brewery) {
             likeButton.style.color = "white" 
         }
     })
-    let beerContainer = document.getElementById("beer-container")
+    let breweryContainer = document.getElementById("brewery-container")
     breweryName.append(likeButton)
-    beerContainer.append(breweryName, breweryType, address, website)
+    breweryContainer.append(breweryName, breweryType, address, website)
 }
 
 function submitForm () {
@@ -81,7 +80,7 @@ function submitForm () {
 function filterBreweries (breweries) { 
     const select = document.getElementById("beer-type-dropdown")
     select.addEventListener("change", (e) => { 
-        document.getElementById("beer-container").innerHTML = ""
+        document.getElementById("brewery-container").innerHTML = ""
         breweries.forEach(beer => { 
             if (beer.brewery_type === e.target.value) { 
                 addNewBrewery(beer)
