@@ -9,6 +9,7 @@ function populate(breweries) {
     breweries.forEach(brewery => {
         addNewBrewery(brewery)
     })
+    sortAlphabetically(breweries)
     filterBreweries(breweries)
 }
 
@@ -26,14 +27,14 @@ function addNewBrewery(brewery) {
 
     //Remove "null" from the address
     if (address.innerText.includes("null")) {
-        address.innerText = address.innerText.replace("null", "")} //Can rewrite as a ternary
+        address.innerText = address.innerText.replace("null", "")} 
 
     //Add the URL
     website.href= `${brewery.website_url}`
+    website.setAttribute("target", "_blank") //Opens the URL in a different tab
     website.innerText = brewery.website_url
 
     //Add content to heart button
-    //This doesn't persist. Do we want to push to our data?
     likeButton.innerHTML = "❤"
     likeButton.className = "likeBtn"
     likeButton.style.color = "white"
@@ -44,6 +45,7 @@ function addNewBrewery(brewery) {
             likeButton.style.color = "white" 
         }
     })
+
     let breweryContainer = document.getElementById("brewery-container")
     breweryName.append(likeButton)
     breweryContainer.append(breweryName, breweryType, address, website)
@@ -53,7 +55,7 @@ function submitForm () {
     const form = document.getElementById("form")
     form.addEventListener("submit", (e) => { 
         e.preventDefault()
-        let newBrewery = { 
+        let newBrewery = {
             "name": e.target.name.value, 
             "brewery_type": e.target.type.value, 
             "street": e.target.street.value, 
@@ -99,4 +101,15 @@ function collapseForm (form) {
             form.style.display = "block"
         }
     })
+}
+
+function sortAlphabetically(breweries) { 
+    let breweryArray = []
+    let name = ""
+    for (let i=0; i<breweries.length; i++) {
+        name = breweries[i].name
+        breweryArray.push(name)
+    }
+    breweryArray = breweryArray.sort()
+    console.log(breweryArray)
 }

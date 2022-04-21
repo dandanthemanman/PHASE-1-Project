@@ -17,7 +17,8 @@
       "phone": "7076969487",
       "website_url": "http://www.barrelbrothersbrewing.com",
       "updated_at": "2021-10-23T02:24:55.243Z",
-      "created_at": "2021-10-23T02:24:55.243Z"
+      "created_at": "2021-10-23T02:24:55.243Z",
+      "liked_brewery": "red"
     },
     {
       "id": "camino-brewing-co-llc-san-jose",
@@ -36,7 +37,8 @@
       "phone": null,
       "website_url": "http://www.caminobrewing.com",
       "updated_at": "2021-10-23T02:24:55.243Z",
-      "created_at": "2021-10-23T02:24:55.243Z"
+      "created_at": "2021-10-23T02:24:55.243Z",
+      "liked_brewery": "white"
     },
     {
       "id": "cerveceria-del-pueblo-pasadena",
@@ -55,7 +57,8 @@
       "phone": null,
       "website_url": null,
       "updated_at": "2021-10-23T02:24:55.243Z",
-      "created_at": "2021-10-23T02:24:55.243Z"
+      "created_at": "2021-10-23T02:24:55.243Z",
+      "liked_brewery": "white"
     },
     {
       "id": "circle-9-brewing-san-diego",
@@ -74,7 +77,8 @@
       "phone": "8586342537",
       "website_url": "http://www.circle9brewing.com",
       "updated_at": "2021-10-23T02:24:55.243Z",
-      "created_at": "2021-10-23T02:24:55.243Z"
+      "created_at": "2021-10-23T02:24:55.243Z",
+      "liked_brewery": "white"
     },
     {
       "id": "dfamle-enterprises-lp-dba-four-sons-brewing-huntington-beach",
@@ -93,7 +97,8 @@
       "phone": null,
       "website_url": null,
       "updated_at": "2021-10-23T02:24:55.243Z",
-      "created_at": "2021-10-23T02:24:55.243Z"
+      "created_at": "2021-10-23T02:24:55.243Z",
+      "liked_brewery": "white"
     },
     {
       "id": "dunbar-brewing-santa-margarita",
@@ -112,7 +117,8 @@
       "phone": "8057049050",
       "website_url": null,
       "updated_at": "2021-10-23T02:24:55.243Z",
-      "created_at": "2021-10-23T02:24:55.243Z"
+      "created_at": "2021-10-23T02:24:55.243Z",
+      "liked_brewery": "white"
     },
     {
       "id": "gbc-murrieta",
@@ -131,7 +137,8 @@
       "phone": null,
       "website_url": null,
       "updated_at": "2021-10-23T02:24:55.243Z",
-      "created_at": "2021-10-23T02:24:55.243Z"
+      "created_at": "2021-10-23T02:24:55.243Z",
+      "liked_brewery": "white"
     },
     {
       "id": "kern-river-brewing-company-back-yard-kernville",
@@ -150,7 +157,8 @@
       "phone": "7603762337",
       "website_url": null,
       "updated_at": "2021-10-23T02:24:55.243Z",
-      "created_at": "2021-10-23T02:24:55.243Z"
+      "created_at": "2021-10-23T02:24:55.243Z",
+      "liked_brewery": "white"
     },
     {
       "id": "last-call-brewing-company-oakdale",
@@ -169,7 +177,8 @@
       "phone": "8885125592",
       "website_url": "http://www.lastcallbrewing.com",
       "updated_at": "2021-10-23T02:24:55.243Z",
-      "created_at": "2021-10-23T02:24:55.243Z"
+      "created_at": "2021-10-23T02:24:55.243Z",
+      "liked_brewery": "white"
     },
     {
       "id": "latchkey-brewing-company-san-diego",
@@ -188,7 +197,8 @@
       "phone": "9165551212",
       "website_url": "http://www.latchkeybrew.com",
       "updated_at": "2021-10-23T02:24:55.243Z",
-      "created_at": "2021-10-23T02:24:55.243Z"
+      "created_at": "2021-10-23T02:24:55.243Z",
+      "liked_brewery": "white"
     },
     {
       "id": "loma-brewing-company-los-gatos",
@@ -207,7 +217,8 @@
       "phone": "4085609626",
       "website_url": "http://www.lomabrew.com",
       "updated_at": "2021-10-23T02:24:55.243Z",
-      "created_at": "2021-10-23T02:24:55.243Z"
+      "created_at": "2021-10-23T02:24:55.243Z",
+      "liked_brewery": "white"
     },
     {
       "id": "lost-winds-brewing-company-san-clemente",
@@ -226,7 +237,8 @@
       "phone": "9492444288",
       "website_url": "http://www.lostwindsbrewing.com",
       "updated_at": "2021-10-23T02:24:55.243Z",
-      "created_at": "2021-10-23T02:24:55.243Z"
+      "created_at": "2021-10-23T02:24:55.243Z",
+      "liked_brewery": "white"
     },
     {
       "id": "lucky-devil-brewing-berkeley",
@@ -245,7 +257,8 @@
       "phone": "5109692865",
       "website_url": "http://www.luckydevilbrewery.com",
       "updated_at": "2021-10-23T02:24:55.243Z",
-      "created_at": "2021-10-23T02:24:55.243Z"
+      "created_at": "2021-10-23T02:24:55.243Z",
+      "liked_brewery": "white"
     },
     {
       "id": "mineras-alley-brewing-company-oroville",
@@ -264,7 +277,8 @@
       "phone": "5306934388",
       "website_url": "http://www.minersalleybrewingco.com",
       "updated_at": "2021-10-23T02:24:55.243Z",
-      "created_at": "2021-10-23T02:24:55.243Z"
+      "created_at": "2021-10-23T02:24:55.243Z",
+      "liked_brewery": "white"
     },
     {
       "id": "newport-beach-brewing-co-newport-beach",
@@ -283,7 +297,8 @@
       "phone": "9496758449",
       "website_url": "http://www.nbbrewco.com",
       "updated_at": "2021-10-23T02:24:55.243Z",
-      "created_at": "2021-10-23T02:24:55.243Z"
+      "created_at": "2021-10-23T02:24:55.243Z",
+      "liked_brewery": "white"
     },
     {
       "id": "origin-brewer-richmond",
@@ -302,7 +317,8 @@
       "phone": null,
       "website_url": null,
       "updated_at": "2021-10-23T02:24:55.243Z",
-      "created_at": "2021-10-23T02:24:55.243Z"
+      "created_at": "2021-10-23T02:24:55.243Z",
+      "liked_brewery": "white"
     },
     {
       "id": "pleasanton-main-st-brewery-pleasanton",
@@ -321,7 +337,8 @@
       "phone": "9254628218",
       "website_url": "http://www.mainstbrewery.com",
       "updated_at": "2021-10-23T02:24:55.243Z",
-      "created_at": "2021-10-23T02:24:55.243Z"
+      "created_at": "2021-10-23T02:24:55.243Z",
+      "liked_brewery": "white"
     },
     {
       "id": "rev-brewing-co-covina",
@@ -340,7 +357,8 @@
       "phone": "6263889949",
       "website_url": "http://www.revwineryandbrewingco.com",
       "updated_at": "2021-10-23T02:24:55.243Z",
-      "created_at": "2021-10-23T02:24:55.243Z"
+      "created_at": "2021-10-23T02:24:55.243Z",
+      "liked_brewery": "white"
     },
     {
       "id": "sactown-union-brewery-sacramento",
@@ -359,7 +377,8 @@
       "phone": "9162724472",
       "website_url": "http://sactownunion.com",
       "updated_at": "2021-10-23T02:24:55.243Z",
-      "created_at": "2021-10-23T02:24:55.243Z"
+      "created_at": "2021-10-23T02:24:55.243Z",
+      "liked_brewery": "white"
     },
     {
       "id": "seven-stills-san-francisco",
@@ -378,7 +397,18 @@
       "phone": "4159140936",
       "website_url": "http://www.sevenstillsofsf.com",
       "updated_at": "2021-10-23T02:24:55.243Z",
-      "created_at": "2021-10-23T02:24:55.243Z"
+      "created_at": "2021-10-23T02:24:55.243Z",
+      "liked_brewery": "white"
+    },
+    {
+      "id": "Allagash",
+      "name": "Allagash",
+      "brewery_type": "",
+      "street": "",
+      "city": "Portland",
+      "state": "Maine",
+      "postal_code": "",
+      "website_url": ""
     }
   ]
 }

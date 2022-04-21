@@ -1,24 +1,11 @@
-header { 
-  font-family: 'Permanent Marker';
-  font-size: 25px;
-  text-align: center;
-  color: #db8e00; 
-  background-image: url("http://clipart-library.com/img/1179659.gif"); 
-  background-repeat: repeat-x;
-  background-size: 45px;
-  background-position-y: bottom;
+a {
+  box-shadow: inset 0 0 0 0 #825501;
+  color: #825501;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
 }
-
-#description { 
-  font-family: 'Permanent Marker';
-  color: #825501; 
-  text-align: center;
-}
-
-#filter { 
-  color: #db8e00; 
-  font-family: 'Permanent Marker';
-  font-size: 18px;
+a:hover {
+  box-shadow: inset 200px 0 0 0 #825501;
+  color: white;
 }
 
 #beer-type-dropdown { 
@@ -26,33 +13,6 @@ header {
   font-family: 'Permanent Marker';
   font-size: 13px;
   color: #db8e00;
-}
-
-#new_brewery, h2 { 
-  color:#db8e00; 
-  font-family: 'Neucha';
-  font-size: 22px;
-}
-
-label, .input{ 
-  font-family: 'Neucha';
-}
-
-h4 { 
-  font-family: 'Neucha';
-  font-weight:bolder;
-}
-
-p, a { 
-  font-family: 'Neucha';
-  font-weight:100;
-  font-size:14px;
-}
-
-#submitBtn { 
-  font-family: 'Neucha';
-  font-size: 18px;
-  text-align: center;
 }
 
 .collapsible { 
@@ -69,11 +29,48 @@ p, a {
   background-color: #ffc16b;
 }
 
+.column {
+  float: right;
+  width: 50%;
+}
+
+#description { 
+  font-family: 'Permanent Marker';
+  color: #825501; 
+  text-align: center;
+}
+
+#filter { 
+  color: #db8e00; 
+  font-family: 'Permanent Marker';
+  font-size: 18px;
+}
+
 #form { 
   padding: 0 18px;
   display: none;
   overflow: hidden;
   background-color: #ffecd2;
+}
+
+h4 { 
+  font-family: 'Neucha';
+  font-weight:bolder;
+}
+
+header { 
+  font-family: 'Permanent Marker';
+  font-size: 25px;
+  text-align: center;
+  color: #db8e00; 
+  background-image: url("http://clipart-library.com/img/1179659.gif"); 
+  background-repeat: repeat-x;
+  background-size: 45px;
+  background-position-y: bottom;
+}
+
+label, .input{ 
+  font-family: 'Neucha';
 }
 
 .likeBtn {
@@ -86,9 +83,16 @@ p, a {
   margin-left: 5px;
 }
 
-.column {
-  float: right;
-  width: 50%;
+#new_brewery, h2 { 
+  color:#db8e00; 
+  font-family: 'Neucha';
+  font-size: 22px;
+}
+
+p, a { 
+  font-family: 'Neucha';
+  font-weight:100;
+  font-size:14px;
 }
 
 .row:after {
@@ -99,4 +103,10 @@ p, a {
 
 .row { 
   background-image: linear-gradient(to bottom right, white, #ffecd2);
+}
+
+#submitBtn { 
+  font-family: 'Neucha';
+  font-size: 18px;
+  text-align: center;
 }
